@@ -19,10 +19,10 @@
         <img class="cabecalho-imagem" src="./img/Group 33553.svg" alt="Logo do Rachi">
         <nav class="cabecalho-nave">
             <ul>
-              <li><a href="#">Funcionalidades</a></li>
-              <li><a href="#">App</a></li>
-              <li><a href="#">Planos</a></li>
-              <li><a href="#">Contatos</a></li>
+              <li><a href="#funcionalidades">Funcionalidades</a></li>
+              <li><a href="#app">App</a></li>
+              <li><a href="#planos">Planos</a></li>
+              <li><a href="#contatos">Contatos</a></li>
         </nav>
     </header>
 
@@ -41,7 +41,7 @@
            
         </section>
 
-        <section class="main-funcionalidades">
+        <section class="main-funcionalidades" id="funcionalidades">
             <div class="main-container">
                 <h2>Como funciona</h2>
                 <div class="funcionalidades">
@@ -66,22 +66,22 @@
             </div>
         </section>
 
-        <section class="main-app">
+        <section class="main-app" id="app">
             <div class="main-container app ">
                 <div class="app-itens">
                 <h2>Baixe nosso app para desfrutar mais!</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> 
                 Officia porro mollitia dolores molestias amet, <br> sint omnis, ullam, repellendus commodi</p>
                    <div class="imagens">
-                       <img src="./img/store.svg" alt="App Store">
-                        <img src="./img/google.svg" alt="Google Play">
+                      <a href=""><img src="./img/store.svg" alt="App Store"></a> 
+                       <a href=""><img src="./img/google.svg" alt="Google Play"></a>
                     </div>
                 </div>
                 <img src="./img/garoto.svg" alt="Imagem de um garoto no celular">
             </div>
         </section>
 
-        <section class="main-planos">
+        <section class="main-planos" id="planos">
             <div class="main-container planos">
                 <h2>Nossos Planos</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
@@ -89,10 +89,9 @@
                 <div class="planos">
                     <div class="planos-itens bronze">
                         <h3>Bronze</h3>
-                        <h4><sup>R$</sup><strong>28</strong>/mês</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
-                        Temporibus, nisi eaque. Eos natus cupiditate omnis a sed <br> 
-                        temporibus obcaecati porro, voluptate dolorem deserunt impedit.</p>
+                        <span><sup>R$</sup><strong>28</strong>/mês</span>
+                        <p>Lorem ipsum dolor sit amet consectetur. <br>
+                        Temporibus, nisi eaque. Eos natus cupiditate omnis a sed</p>
 
                         <input class="plano-button" type="button" value="Assinar">
                     </div>
@@ -100,27 +99,41 @@
                     <div class="planos-itens prata">
                         <h3>Prata</h3>
                         <legend>Preferido</legend>
-                        <h4><sup>R$</sup><strong>57</strong>/mês</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
-                        Temporibus, nisi eaque. Eos natus cupiditate omnis a sed <br> 
-                        temporibus obcaecati porro, voluptate dolorem deserunt impedit.</p>
+                        <span><sup>R$</sup><strong>57</strong>/mês</span>
+                        <p>Lorem ipsum dolor sit amet consectetur. <br> 
+                        Temporibus, nisi eaque. Eos natus cupiditate omnis a sed</p>
 
                         <input class="plano-button" type="button" value="Assinar">
                     </div>
 
                     <div class="planos-itens ouro">
                         <h3>Ouro</h3>
-                        <h4><sup>R$</sup><strong>94</strong>/mês</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
-                        Temporibus, nisi eaque. Eos natus cupiditate omnis a sed <br> 
-                        temporibus obcaecati porro, voluptate dolorem deserunt impedit.</p>
-
+                        <span><sup>R$</sup><strong>94</strong>/mês</span>
+                        <p>Lorem ipsum dolor sit amet consectetur. <br> 
+                        Temporibus, nisi eaque. Eos natus cupiditate omnis a sed</p>
                         <input class="plano-button" type="button" value="Assinar">
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="main-contato" id="contatos">
+            <div class="main-container contato">
+                <h2>Contato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Eum perspiciatis non natus itaque ducimus deserunt. Laboriosam sit obcaecati.</p>
+
+                <form action="">
+                    <input type="email" name="email" id="email" value="Seu melhor e-mail">
+                    <button class="botao-contato"><p>Enviar</p></button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer class="rodape">
+        <p>Rachi - Todos os direitos reservados.</p>
+    </footer>
     
 </body>
 </html>
