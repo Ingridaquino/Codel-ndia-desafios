@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-color-azul:#EFF8FF;
+    --body-color-white: #FFFFFF;
+    --card-black: #293145; 
+    --botao-color: #0F9AFE;
+    --titulo-color: #293145;
+    --text-color: #6E7275;
+}
+
+/* ------------ Header ------------ */
+.cabecalho{
+    background: var(--body-color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px -0px;
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho-nave ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.cabecalho-nave ul li > a {
+    color: #6E7275; 
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- main ---- */
+.main-container{
+    width: 1440px;
+}
+
+
+/* --- main > Home ----- */
+ 
+.main-home{
+    background: var(--body-color-azul);
+    padding: 12rem 2rem 4rem 2rem;
+}
+
+.main-home .home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home .home-itens > h1{
+    color: var(--titulo-color);
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.main .button{
+    background: var(--botao-color);
+    width: 200px;
+    height: 56px;
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+
+.main .button:hover{
+    background: var(--card-black);
+}
+
+.main .button > p{
+    color: var(--body-color-white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/* --- main > funcionalidades ----- */
+.main-funcionalidades{
+    background: var(--body-color-white);
+    padding: 5rem 2rem ;
+    text-align: center;
+}
+
+.main-funcionalidades  h2{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--titulo-color);
+}
+
+ .funcionalidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8rem 0 2rem 0;
+}
+
+.funcionalidades-itens .funcionalidades-imagem{
+    margin-bottom: 2rem;
+}
+
+.funcionalidades-itens > h3{ 
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 1rem;
+    color: var(--titulo-color);
+}
+
+.funcionalidades-itens > p{ 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-color);
+}
+
+/* --- main > App ----- */
+ 
+.main-app{
+    background: var(--body-color-azul);
+    padding: 5rem 2rem;
+}
+
+.main-container.app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app-itens{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.app-itens h2{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: .25rem;
+    color: var(--titulo-color);
+}
+
+.app-itens p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-color);
+}
+
+.app-itens .imagens{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+/* --- main > Planos----- */
+.main-planos{
+    background: var(--body-color-white);
+    padding: 5rem 2rem;
+}
+
+.main-container.planos{
+    text-align: center;
+}
+
+.main-container.planos > h2{
+    padding-bottom: 1rem;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: .25rem;
+    color: var(--titulo-color);
+}
+
+.main-container.planos > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--text-color);
+    padding-bottom: 3rem;
+}
+
+
+.main-container .planos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+.main-container .planos .planos-itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    width: 370px;
+    height: 471px;
+    border-radius: 15px;
+    padding: 4rem 2rem 0 2rem;
+}
+.planos .planos-itens h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.planos .planos-itens h4 > sup{
+    font-size: 25px;
+}
+
+.planos .planos-itens h4 > strong{
+    font-size: 50px;
+}
+
+.planos-itens.bronze, .planos-itens.ouro{
+    background: var(--body-color-azul);
+}
+
+.planos-itens.bronze h3, .planos-itens.ouro h3{
+    color: var(--titulo-color);
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Sora', sans-serif;
+}
+
+
